@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha tabela</title>
+
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            border-spacing: 1px;
+            empty-cells: hide;
+
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 12px;
+        }
+
+        thead{
+            background-color: lightgrey;
+            font-weight: bolder;
+            text-align: left;
+        }
+
+        caption {
+            caption-side: bottom;
+        }
+
+        tbody tr:nth-child(even){   /* Linhas pares*/
+            background-color: lightcyan;
+        }
+
+        tbody tr:nth-child(odd){    /* Linhas impares*/
+            background-color: cyan;
+        }
+
+        tbody tr:hover{
+            background-color: yellow;
+        }
+
+        tfoot{
+            background-color: lightgrey;
+        }
+
+    </style>
+</head>
+<body>
+    <table border="1">
+        <caption>Tabela 1. Clientes ABC company</caption> <!-- Legenda da tabela -->
+        <thead>
+            <tr>
+                <th rowspan="2">Nome</th>
+                <th rowspan="2">Telefone</th>
+                <th colspan="5">Endereço</th>
+            </tr>
+         
+            <tr>
+                <th>Rua</th>
+                <th>Número</th>
+                <th>Cidade</th>
+                <th>Estado</th>
+                <th>CEP</th>
+            </tr>
+        </thead>
+        
+        <tbody>
+            <tr>
+                <td>Weslley Higor</td>
+                <td>+5568996102021</td>
+                <td>Rua S4</td>
+                <td>217</td>
+                <td>Rio Branco</td>
+                <td>Acre</td>
+                <td>69919691</td>
+            </tr>
+            <tr>
+                <td>Higor Campos</td>
+                <td>+5568996102021</td>
+                <td>Amoty Pascoal</td>
+                <td>118</td>
+                <td>Rio Branco</td>
+                <td>Acre</td>
+                <td>69919862</td>
+            </tr>
+            <tr>
+                <td>Vitoria Albuquerque</td>
+                <td>+5568999044123</td>
+                <td>Amoty Pascoal</td>
+                <td>118</td>
+                <td>Rio branco</td>
+                <td>Acre</td>
+                <td>69919862</td>
+            </tr>
+
+            <tr>
+                <td>Vitoria Regina</td>
+                <td>+5568999044123</td>
+                <td>Amoty Pascoal</td>
+                <td>118</td>
+                <td>Rio Branco</td>
+                <td>Acre</td>
+                <td>69919862</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td colspan="7">Para maiores informações, entre em contato conosco.</td>
+            </tr>
+        </tfoot>
+
+    </table>
+</body>
+</html>
