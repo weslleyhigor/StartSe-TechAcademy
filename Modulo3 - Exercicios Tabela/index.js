@@ -15,7 +15,7 @@ function capturaEnvio(){
 
         const table = document.querySelector('#tb-body');
         
-        table.innerHTML += `<tr> <td id="tb-nome">${nome}</td> <td id="tb-tel">${tel}</td> <td id="tb-rua">${rua}</td> <td id="tb-num">${num}</td> <td id="tb-bairro">${bairro}</td> <td id="tb-cidade">${cidade}</td> <td id="tb-estado">${estado}</td> <td id="tb-cep">${cep}</td> </tr>`;
+        table.innerHTML += `<tr> <td class="tb-nome">${nome}</td> <td class="tb-tel">${tel}</td> <td class="tb-rua">${rua}</td> <td class="tb-num">${num}</td> <td class="tb-bairro">${bairro}</td> <td class="tb-cidade">${cidade}</td> <td class="tb-estado">${estado}</td> <td class="tb-cep">${cep}</td> </tr>`;
 
     });
 };
