@@ -3,3 +3,11 @@ a, .menuitem {
     color: green;
     cursor: pointer;
 }
+
+a.link {
+    background-color: #aaaaaa;
+}
+
+.link {
+    font-size: 50px;
+}
